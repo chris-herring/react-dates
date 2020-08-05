@@ -19,4 +19,3 @@ export { default as toISODateString } from './utils/toISODateString';
 export { default as toLocalizedDateString } from './utils/toLocalizedDateString';
 export { default as toMomentObject } from './utils/toMomentObject';
 
-console.log('loading forked react-dates');
