@@ -349,7 +349,10 @@ export default class DayPickerSingleDateController extends React.PureComponent {
   }
 
   onDayClick(day, e) {
-    if (e) e.preventDefault();
+    if (e) {
+		e.preventDefault();
+		e.stopPropagation();
+	}
     if (this.isBlocked(day)) return;
     const {
       onDateChange,
